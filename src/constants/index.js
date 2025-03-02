@@ -2,19 +2,21 @@ import project1 from "../assets/projects/project-1.ico";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import eliteforums_logo from "../assets/experience/eliteforums_logo.jpeg";
 
 export const HERO_CONTENT = `I am a skilled Full Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React, and Node.js). Having completed a comprehensive industrial certification course by SmartInternz, I am proficient in building dynamic, responsive web applications. My technical acumen extends to database design, API development, and creating user-centric interfaces. With a passion for continuous learning and problem-solving, I am eager to contribute to innovative projects and drive impactful solutions.`;
 
 export const ABOUT_TEXT = `I am a dedicated Full Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React, and Node.js), complemented by an industrial certification in Full Stack Development from SmartInternz. I have a strong foundation in creating scalable, dynamic, and user-friendly web applications, with a focus on both front-end and back-end development. My skills include designing robust databases, building RESTful APIs, and developing responsive interfaces that enhance user experiences. Passionate about technology and continuous learning, I thrive on solving complex problems and contributing to impactful projects that make a difference.`;
 
-// export const EXPERIENCES = [
-//   {
-//     year: "2023 - Present",
-//     role: "Senior Full Stack Developer",
-//     company: "Google Inc.",
-//     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-//     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-//   },
+export const EXPERIENCES = [
+  {
+    year: "Jan 2025 - Present",
+    role: "Full Stack Developer Intern",
+    company: "Elite Forums",
+    logo: eliteforums_logo,
+    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, Node.js and Express.js . Implemented RESTful APIs and integrated with Firebase and its databases.`,
+    technologies: ["Javascript", "React.js", "Node.js", "Firebase", "Express.js"],
+  },
 //   {
 //     year: "2022 - 2023",
 //     role: "Frontend Developer",
@@ -36,11 +38,11 @@ export const ABOUT_TEXT = `I am a dedicated Full Stack Developer with expertise 
 //     description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
 //     technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
 //   },
-// ];
+];
 
 export const PROJECTS = [
   {
-    title: "Spotify Cone",
+    title: "Spotify Clone",
     image: project1,
     description:
       "The Spotify Clone is a web-based application built using HTML, CSS, and JavaScript, designed to mimic the user interface and functionality of the popular music streaming platform.",
