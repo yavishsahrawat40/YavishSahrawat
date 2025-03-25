@@ -10,7 +10,7 @@ export const ABOUT_TEXT = `I am a dedicated Full Stack Developer with expertise 
 
 export const EXPERIENCES = [
   {
-    year: "Jan 2025 - Present",
+    year: "Jan 2025 - Mar 2025",
     role: "Full Stack Developer Intern",
     company: "Elite Forums",
     logo: eliteforums_logo,
