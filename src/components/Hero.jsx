@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { HERO_CONTENT } from '../constants'
 import profileImage from '../assets/profile.jpg'
-import { motion } from "motion/react"
-import { delay } from 'motion'
+import { motion, AnimatePresence } from "motion/react"
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -14,6 +13,17 @@ const container = (delay) => ({
 })
 
 const Hero = () => {
+    const titles = ["MERN Stack Developer", "Machine Learning"];
+    const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
+        }, 3000); // Change every 3 seconds
+
+        return () => clearInterval(interval);
+    }, [titles.length]);
+
     return (
         <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
             <div className='flex flex-wrap'>
@@ -23,12 +33,20 @@ const Hero = () => {
                             variants={container(1)}
                             initial="hidden"
                             animate="visible"
-                            className='pb-14 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl'>Yavish Sahrawat</motion.h1>
-                        <motion.span
-                            variants={container(1.5)}
-                            initial="hidden"
-                            animate="visible"
-                            className='bg-gradient-to-r from-purple-500 via-slate-400 to-pink-400 bg-clip-text text-4xl tracking-tight text-transparent pl-3'>MERN Stack Developer</motion.span>
+                            className='pb-14 text-7xl font-thin tracking-tight lg:mt-16 lg:text-8xl'>YAVISH SAHRAWAT</motion.h1>
+                        <div className='h-16 flex items-center'>
+                            <AnimatePresence mode="wait">
+                                <motion.span
+                                    key={currentTitleIndex}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -20 }}
+                                    transition={{ duration: 0.5 }}
+                                    className='bg-gradient-to-r from-purple-500 via-slate-400 to-pink-400 bg-clip-text text-5xl tracking-tight text-transparent pl-3'>
+                                    {titles[currentTitleIndex]}
+                                </motion.span>
+                            </AnimatePresence>
+                        </div>
                         <motion.p
                             variants={container(2)}
                             initial="hidden"

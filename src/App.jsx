@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,8 +7,6 @@ import Contact from './components/Contact'
 import Experience from './components/Experience'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className='overflow-x-hidden text-neutral-100 antialiased selection:bg-cyan-400 selection:bg-slate-700'>
