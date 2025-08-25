@@ -13,7 +13,7 @@ const container = (delay) => ({
 })
 
 const Hero = () => {
-    const titles = ["MERN Stack Developer", "Machine Learning"];
+    const titles = ["MERN Stack Developer", "Machine Learning", "Data Science"];
     const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
 
     useEffect(() => {
@@ -33,7 +33,7 @@ const Hero = () => {
                             variants={container(1)}
                             initial="hidden"
                             animate="visible"
-                            className='pb-14 text-7xl font-thin tracking-tight lg:mt-16 lg:text-8xl'>YAVISH SAHRAWAT</motion.h1>
+                            className='pb-14 text-5xl font-thin tracking-tight lg:mt-16 lg:text-8xl'>YAVISH SAHRAWAT</motion.h1>
                         <div className='h-16 flex items-center'>
                             <AnimatePresence mode="wait">
                                 <motion.span

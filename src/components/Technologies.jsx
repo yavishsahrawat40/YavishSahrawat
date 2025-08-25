@@ -5,6 +5,8 @@ import { SiMongodb } from 'react-icons/si'
 import { SiExpress } from 'react-icons/si'
 import { DiPython } from 'react-icons/di'
 import { DiJava } from 'react-icons/di'
+import { GrMysql } from 'react-icons/gr'
+import { DiFirebase } from 'react-icons/di'
 import { animate, motion } from 'framer-motion'
 
 const icons = (duration) => ({
@@ -74,6 +76,20 @@ const Technologies = () => {
                     animate="animate"
                     className='rounded-3xl border-4 border-transparent p-4'>
                     <DiPython className='text-6xl text-cyan-400' />
+                </motion.div>
+                <motion.div
+                    variants={icons(3)}
+                    initial="initial"
+                    animate="animate"
+                    className='rounded-3xl border-4 border-transparent p-4'>
+                    <GrMysql className='text-6xl text-cyan-400' />
+                </motion.div>
+                <motion.div
+                    variants={icons(2.5)}
+                    initial="initial"
+                    animate="animate"
+                    className='rounded-3xl border-4 border-transparent p-4'>
+                    <DiFirebase className='text-6xl text-red-400' />
                 </motion.div>
             </motion.div>
         </div>

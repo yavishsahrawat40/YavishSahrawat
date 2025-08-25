@@ -2,11 +2,13 @@ import React from 'react'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
+import { SiLeetcode } from 'react-icons/si'
 
 const iconLink = [
   { icon: <FaGithub size={30} />, link: "https://github.com/yavishsahrawat40" },
   { icon: <FaLinkedin size={30} />, link: "https://www.linkedin.com/in/yavish-sahrawat-62017325/" },
   { icon: <FaInstagram size={30} />, link: "https://www.instagram.com/yavi_sahrawat/" },
+  { icon: <SiLeetcode size={30} />, link: "https://leetcode.com/u/nIdq9yhWKn/" },
 ]
 
 const handdleIconCLick = (url) => {
