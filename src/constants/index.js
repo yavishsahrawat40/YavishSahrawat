@@ -26,7 +26,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Book Next",
+    title: "Book Nest",
     image: project2,
     description:
     "Book Nest is a comprehensive online bookstore platform designed for users, sellers, and administrators, offering seamless browsing, purchasing, and management of books.",
