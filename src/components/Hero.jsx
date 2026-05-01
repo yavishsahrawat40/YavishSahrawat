@@ -35,7 +35,7 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               className="mb-5 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.25em] text-cyan-100">
-              Full Stack Developer
+              Data Scientist | ML Engineer
             </motion.span>
             <motion.h1
               variants={container(1)}
@@ -52,7 +52,7 @@ const Hero = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
-                  className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-pink-300 bg-clip-text text-3xl font-medium tracking-normal text-transparent sm:text-4xl lg:text-5xl">
+                  className="hero-role text-3xl font-semibold tracking-normal sm:text-4xl lg:text-5xl">
                   {titles[currentTitleIndex]}
                 </motion.span>
               </AnimatePresence>
