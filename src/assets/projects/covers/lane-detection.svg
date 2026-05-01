@@ -1,0 +1,22 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="42" fill="#020617"/>
+  <rect width="1200" height="760" rx="42" fill="url(#sky)"/>
+  <path d="M132 640L476 224h248l344 416H132Z" fill="#0F172A"/>
+  <path d="M560 640l50-416h-20l-90 416h60ZM640 640l-50-416h20l90 416h-60Z" fill="#F8FAFC" opacity=".9"/>
+  <path d="M306 640l270-416M894 640L624 224" stroke="#38BDF8" stroke-width="8" stroke-dasharray="28 28" opacity=".85"/>
+  <rect x="96" y="92" width="1008" height="112" rx="26" fill="#020617" fill-opacity=".62" stroke="#67E8F9" stroke-opacity=".35"/>
+  <text x="140" y="136" fill="#67E8F9" font-family="Inter, Arial" font-size="22" font-weight="700" letter-spacing="5">COMPUTER VISION</text>
+  <text x="140" y="178" fill="#F8FAFC" font-family="Inter, Arial" font-size="42" font-weight="800">Lane Detection &amp; Departure Warning</text>
+  <rect x="838" y="486" width="168" height="82" rx="18" fill="#F43F5E" fill-opacity=".16" stroke="#FDA4AF" stroke-width="4"/>
+  <text x="870" y="538" fill="#FFE4E6" font-family="Inter, Arial" font-size="28" font-weight="800">LDW</text>
+  <rect x="146" y="486" width="216" height="82" rx="18" fill="#22D3EE" fill-opacity=".16" stroke="#67E8F9" stroke-width="4"/>
+  <text x="174" y="538" fill="#CFFAFE" font-family="Inter, Arial" font-size="28" font-weight="800">YOLOv8</text>
+  <defs>
+    <linearGradient id="sky" x1="600" y1="0" x2="600" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2447"/>
+      <stop offset=".55" stop-color="#075985"/>
+      <stop offset=".56" stop-color="#020617"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+</svg>

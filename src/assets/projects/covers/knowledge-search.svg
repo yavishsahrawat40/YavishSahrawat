@@ -1,0 +1,26 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="42" fill="#020617"/>
+  <path d="M0 0h1200v760H0z" fill="url(#bg)"/>
+  <rect x="104" y="100" width="376" height="526" rx="26" fill="#F8FAFC" stroke="#BAE6FD" stroke-width="4"/>
+  <rect x="154" y="174" width="276" height="20" rx="10" fill="#0F172A" opacity=".75"/>
+  <rect x="154" y="232" width="226" height="16" rx="8" fill="#64748B"/>
+  <rect x="154" y="276" width="258" height="16" rx="8" fill="#64748B"/>
+  <rect x="154" y="320" width="196" height="16" rx="8" fill="#64748B"/>
+  <rect x="154" y="384" width="276" height="110" rx="18" fill="#DBEAFE"/>
+  <circle cx="736" cy="356" r="138" fill="#22D3EE" fill-opacity=".13" stroke="#67E8F9" stroke-width="6"/>
+  <circle cx="862" cy="260" r="62" fill="#A78BFA" fill-opacity=".17" stroke="#C4B5FD" stroke-width="5"/>
+  <circle cx="902" cy="486" r="78" fill="#34D399" fill-opacity=".15" stroke="#A7F3D0" stroke-width="5"/>
+  <path d="M790 320l38-38M796 420l58 38M628 354H488" stroke="#E0F2FE" stroke-width="8" stroke-linecap="round"/>
+  <text x="604" y="112" fill="#67E8F9" font-family="Inter, Arial" font-size="24" font-weight="700" letter-spacing="5">KNOWLEDGE SEARCH</text>
+  <text x="604" y="166" fill="#F8FAFC" font-family="Inter, Arial" font-size="54" font-weight="800">PDF RAG Engine</text>
+  <text x="604" y="208" fill="#CBD5E1" font-family="Inter, Arial" font-size="24">FastAPI • LangChain • ChromaDB • Ollama</text>
+  <rect x="616" y="586" width="360" height="48" rx="24" fill="#F472B6" fill-opacity=".14" stroke="#F9A8D4" stroke-opacity=".6"/>
+  <text x="654" y="618" fill="#FCE7F3" font-family="Inter, Arial" font-size="22" font-weight="700">Ask questions over documents</text>
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(816 232) rotate(126) scale(706 870)">
+      <stop stop-color="#7E22CE" stop-opacity=".38"/>
+      <stop offset=".48" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+  </defs>
+</svg>

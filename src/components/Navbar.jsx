@@ -1,32 +1,52 @@
-import React from 'react'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si'
 
-const iconLink = [
-  { icon: <FaGithub size={30} />, link: "https://github.com/yavishsahrawat40" },
-  { icon: <FaLinkedin size={30} />, link: "https://www.linkedin.com/in/yavish-sahrawat-62017325/" },
-  { icon: <FaInstagram size={30} />, link: "https://www.instagram.com/yavi_sahrawat/" },
-  { icon: <SiLeetcode size={30} />, link: "https://leetcode.com/u/nIdq9yhWKn/" },
+const navLinks = [
+  { label: 'About', href: '#about' },
+  { label: 'Credentials', href: '#credentials' },
+  { label: 'Tech', href: '#technologies' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' },
 ]
 
-const handdleIconCLick = (url) => {
-  window.open(url, "_blank")
+const iconLink = [
+  { icon: <FaGithub size={22} />, link: "https://github.com/yavishsahrawat40", label: "GitHub" },
+  { icon: <FaLinkedin size={22} />, link: "https://www.linkedin.com/in/yavish-sahrawat-62017325/", label: "LinkedIn" },
+  { icon: <FaInstagram size={22} />, link: "https://www.instagram.com/yavi_sahrawat/", label: "Instagram" },
+  { icon: <SiLeetcode size={22} />, link: "https://leetcode.com/u/nIdq9yhWKn/", label: "LeetCode" },
+]
+
+const handleIconClick = (url) => {
+  window.open(url, "_blank", "noopener,noreferrer")
 }
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between w-full h-60'>
-      <div className='mt-4'>
-        <span className='w-20 bg-gradient-to-r from-purple-500 via-slate-400 to-pink-400 bg-clip-text text-4xl tracking-tight text-transparent' >YS</span>
+    <nav className="sticky top-0 z-50 -mx-5 flex min-h-20 items-center justify-between border-b border-white/10 bg-slate-950/75 px-5 py-4 backdrop-blur-xl sm:-mx-8 sm:px-8">
+      <a href="#" className="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-lg font-bold text-cyan-100 shadow-lg shadow-cyan-950/20 backdrop-blur">
+        YS
+      </a>
+      <div className="hidden items-center gap-5 lg:flex">
+        {navLinks.map((item) => (
+          <a
+            key={item.href}
+            href={item.href}
+            className="text-sm font-medium text-neutral-300 transition hover:text-cyan-200">
+            {item.label}
+          </a>
+        ))}
       </div>
-      <div className='m-8 flex justify-center items-center gap-6 w-32 h-5'>
-        {iconLink.map((icon, index) => (
-          <div key={index} className='cursor-pointer' onClick={() => handdleIconCLick(icon.link)}>
-            <div className=''></div>
-            {icon.icon}
-          </div>
+      <div className="flex items-center justify-center gap-3">
+        {iconLink.map((item) => (
+          <button
+            key={item.label}
+            type="button"
+            aria-label={`Open ${item.label}`}
+            className="rounded-full border border-white/10 bg-white/5 p-2 text-neutral-200 transition hover:-translate-y-1 hover:border-cyan-300/50 hover:text-cyan-200"
+            onClick={() => handleIconClick(item.link)}>
+            {item.icon}
+          </button>
         ))}
       </div>
     </nav>

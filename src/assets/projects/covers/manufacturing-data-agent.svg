@@ -1,0 +1,29 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="42" fill="#020617"/>
+  <path d="M0 0h1200v760H0z" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#67E8F9">
+    <path d="M0 96h1200M0 192h1200M0 288h1200M0 384h1200M0 480h1200M0 576h1200M0 672h1200"/>
+    <path d="M96 0v760M192 0v760M288 0v760M384 0v760M480 0v760M576 0v760M672 0v760M768 0v760M864 0v760M960 0v760M1056 0v760"/>
+  </g>
+  <rect x="86" y="86" width="1028" height="588" rx="32" fill="#07111F" stroke="#164E63" stroke-width="3"/>
+  <rect x="132" y="142" width="396" height="476" rx="24" fill="#0F172A" stroke="#22D3EE" stroke-opacity=".35" stroke-width="2"/>
+  <rect x="590" y="142" width="478" height="476" rx="24" fill="#0F172A" stroke="#34D399" stroke-opacity=".35" stroke-width="2"/>
+  <path d="M214 502V356h84v146h-84Zm120 0V284h84v218h-84Z" fill="#22D3EE" opacity=".35"/>
+  <path d="M184 502h272" stroke="#67E8F9" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="696" cy="276" r="52" fill="#22D3EE" fill-opacity=".18" stroke="#67E8F9" stroke-width="5"/>
+  <circle cx="892" cy="276" r="52" fill="#34D399" fill-opacity=".18" stroke="#A7F3D0" stroke-width="5"/>
+  <circle cx="794" cy="440" r="62" fill="#F472B6" fill-opacity=".14" stroke="#F9A8D4" stroke-width="5"/>
+  <path d="M740 300l106 0M870 322l-46 80M762 402l-44-80" stroke="#E0F2FE" stroke-width="5" stroke-linecap="round"/>
+  <text x="132" y="112" fill="#67E8F9" font-family="Inter, Arial" font-size="24" font-weight="700" letter-spacing="5">MANUFACTURING DATA AGENT</text>
+  <text x="162" y="212" fill="#F8FAFC" font-family="Inter, Arial" font-size="48" font-weight="800">RAG + Local LLM</text>
+  <text x="162" y="254" fill="#94A3B8" font-family="Inter, Arial" font-size="24">Suppliers • Inventory • Orders</text>
+  <rect x="642" y="528" width="374" height="44" rx="22" fill="#22D3EE" fill-opacity=".16" stroke="#22D3EE" stroke-opacity=".45"/>
+  <text x="676" y="558" fill="#CFFAFE" font-family="Inter, Arial" font-size="22" font-weight="700">MongoDB Feedback Loop</text>
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(254 170) rotate(40) scale(886 716)">
+      <stop stop-color="#0E7490" stop-opacity=".45"/>
+      <stop offset=".5" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+  </defs>
+</svg>
